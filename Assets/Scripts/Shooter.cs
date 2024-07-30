@@ -10,6 +10,7 @@ public class Shooter : MonoBehaviour
         if (isFire)
         {
             GameObject newBullet = Instantiate(bulletProrotype);
+            newBullet.SetActive(true);
             newBullet.transform.position = transform.position;
             newBullet.transform.rotation = transform.rotation;
         }

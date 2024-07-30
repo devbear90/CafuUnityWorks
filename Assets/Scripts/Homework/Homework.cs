@@ -75,4 +75,18 @@ public class Homework : MonoBehaviour
         return current + direction * maxStep;
     }
 
+    int SumOfDigits(int number)
+    {
+
+        // 1023
+        int sum = 0;
+        while (number != 0)
+        {
+            sum += number % 10; // utolsó számjegy
+            number /= 10;
+        }
+
+        return sum;
+    }
+
 }
